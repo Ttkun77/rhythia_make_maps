@@ -1,0 +1,11 @@
+# GitHubに上げないファイルの設定
+
+# 1. 実行ファイル（ffmpeg）を無視
+ffmpeg.exe
+ffprobe.exe
+
+# 2. 今後ダウンロードされる音声ファイル（中身）をすべて無視
+input_audio/*
+
+# 3. ただし、フォルダを維持するための .gitkeep だけは例外として残す
+!input_audio/.gitkeep
