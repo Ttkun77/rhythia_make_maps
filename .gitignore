@@ -10,5 +10,6 @@ input_audio/*
 # 3. ただし、フォルダを維持するための .gitkeep だけは例外として残す
 !input_audio/.gitkeep
 
-# 4. 設定フォルダを無視する
+# 4. 自動生成されるファイルを無視する
 .vscode/
+__pycache__
