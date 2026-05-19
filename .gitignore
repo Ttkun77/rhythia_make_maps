@@ -6,9 +6,11 @@ ffprobe.exe
 
 # 2. 今後ダウンロードされる音声ファイル（中身）をすべて無視
 input_audio/*
+out_maps/*
 
 # 3. ただし、フォルダを維持するための .gitkeep だけは例外として残す
 !input_audio/.gitkeep
+!out_maps/.gitkeepgit reset
 
 # 4. 自動生成されるファイルを無視する
 .vscode/
