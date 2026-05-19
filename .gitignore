@@ -10,8 +10,8 @@ out_maps/*
 
 # 3. ただし、フォルダを維持するための .gitkeep だけは例外として残す
 !input_audio/.gitkeep
-!out_maps/.gitkeepgit reset
+!out_maps/.gitkeep
 
 # 4. 自動生成されるファイルを無視する
 .vscode/
-__pycache__
+__pycache__/
