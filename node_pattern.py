@@ -22,7 +22,7 @@ def easy_map_make(mp3_map_name):
 def normal_map_make(mp3_map_name):
     try:
         #BPM判定関数
-        bpm_num = bpm_analyzer(mp3_map_name)
+        beat_ms = bpm_analyzer(mp3_map_name)
         result_message(success=True) 
     except Exception as e:
         print(f"エラーが発生しました: {e}\n")
@@ -34,7 +34,7 @@ def normal_map_make(mp3_map_name):
 def difficult_map_make(mp3_map_name):
     try:
         #BPM判定関数
-        bpm_num = bpm_analyzer(mp3_map_name)
+        beat_ms = bpm_analyzer(mp3_map_name)
         result_message(success=True) 
     except Exception as e:
         print(f"エラーが発生しました: {e}\n")
@@ -52,9 +52,7 @@ def bpm_analyzer(mp3_map_name):
     else:
         bpm = int(tempo)
         
-    print(f"==========================================")
     print(f" 曲のBPM: {bpm}")
-    print(f"==========================================")
 
     beat = 60000 / bpm
     return int(beat)
